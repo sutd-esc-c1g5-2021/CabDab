@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CabDab">
         <activity android:name=".UploadActivity"></activity>
+        <activity android:name=".SaveFileActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
