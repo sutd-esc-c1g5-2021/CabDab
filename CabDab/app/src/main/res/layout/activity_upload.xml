@@ -4,35 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom= "@dimen/cardview_compat_inset_shadow"
+    android:paddingLeft="@dimen/cardview_compat_inset_shadow"
+    android:paddingRight="@dimen/cardview_compat_inset_shadow"
+    android:paddingTop="@dimen/cardview_compat_inset_shadow"
     tools:context=".UploadActivity">
     <LinearLayout
         android:id="@+id/layout_button"
         android:orientation="horizontal"
-        android:layout_alignParentTop="true"
-        android:weightSum="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/btnChoose"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Choose"
             app:backgroundTint="#30A8A8" />
 
-        <Button
-            android:id="@+id/btnUpload"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Upload"
-            app:backgroundTint="#30A8A8" />
+        <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:hint="Enter name for Image" />
+
     </LinearLayout>
 
     <ImageView
         android:id="@+id/imgView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_button"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Upload"
+            app:backgroundTint="#30A8A8"/>
+
+        <TextView
+            android:id="@+id/textViewShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="View Uploads"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
 </RelativeLayout>
