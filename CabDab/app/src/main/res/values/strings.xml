@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CabDab</string>
+    <string name="overwrite_fragment_label">Overwrite Existing File?</string>
+    <string name="overwrite_fragment_message">The filename provided currently exists. Do you want to overwrite it?</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
 </resources>
