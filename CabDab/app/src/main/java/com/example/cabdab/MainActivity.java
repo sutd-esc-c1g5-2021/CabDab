@@ -20,4 +20,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, UploadActivity.class);
         startActivity(intent);
     }
+    public void download(View view){
+        Intent intent = new Intent(this, DownloadActivity.class);
+        startActivity(intent);
+    }
 }
