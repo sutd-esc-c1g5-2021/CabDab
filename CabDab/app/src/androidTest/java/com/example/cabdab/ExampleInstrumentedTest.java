@@ -23,4 +23,8 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.example.cabdab", appContext.getPackageName());
     }
+    @Test
+    public void duplicateName(){
+        assertEquals(new UploadActivity().duplicateName(), false);
+    }
 }
